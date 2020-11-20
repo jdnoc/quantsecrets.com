@@ -1,0 +1,2 @@
+# quantsecrets
+Learn algorithmic trading.
