@@ -1,7 +1,22 @@
-url: "https://quantsecrets.com" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "Quant Secrets" # the name of your site, e.g. ACME Corp.
+# Site settings
+title: "Quant Secrets"
+email: jordan@quantsecrets.com
+description: > # this means to ignore newlines until "baseurl:"
+  Learn algorithmic trading.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://quantsecrets.com" # the base hostname & protocol for your site
+twitter_username: quantsecrets
 
+logo: /assets/images/header.png
+image: /assets/images/header.png
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+permalink: ":title/"
+
+# Minification
 sass:
-    sass_dir: _sass
-    style: compressed
+  style: compressed
