@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://quantsecrets.com" # the base hostname & protocol for your site
 twitter:
   username: quantsecrets
-  card: summary
+  card: summary_large_image
 
 logo: /assets/images/logo-words.png
 image: /assets/images/quant-secrets.png
