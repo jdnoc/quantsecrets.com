@@ -396,11 +396,11 @@ function getTable(symbol) {
     let db = new sqlite3.Database(symbol + '.sqlite3');
     console.log(symbol + '.sqlite3')
 
-		// Retrieve the data, in order by date
+    // Retrieve the data, in order by date
     let sql = `SELECT DISTINCT Date date, Close close FROM tickers ORDER BY date`;
     let data = null;
 
-		// Actually retreive the data 
+    // Actually retrieve the data 
     db.all(sql, [], (err, rows) => {
         if (err) {
             console.log(err)

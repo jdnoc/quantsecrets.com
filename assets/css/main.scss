@@ -9,7 +9,7 @@ pre {
 }
 
 .highlighter-rouge {
-        margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -112,4 +112,49 @@ pre {
 .highlight pre {
     /* Avoid pushing up the copy buttons. */
     margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: $gray-900;
+      color: $gray-200;
+    }
+    .card-body {
+        color: $gray-200 !important;
+        background-color: $gray-900;
+    };
+    // img {
+    //   filter: grayscale(30%);
+    // }
+    .bg-white {
+        background-color: $gray-900 !important;
+    };
+    .text-white {
+        color: $gray-900 !important;
+    };
+    .nav-link {
+        color: $gray-200 !important;
+    };
+    .bg-light {
+        background-color: $gray-700 !important;
+    }
+    .bg-dark {
+        background-color: $gray-300 !important;
+    }
+    .text-dark {
+        color: $gray-200 !important;
+    }
+    pre {
+        background-color: $gray-800 !important;
+    }
+    .navbar-brand {
+        color: $gray-200 !important;
+    }
+    .navbar-toggler {
+        color: $navbar-dark-color !important;
+        border-color: $navbar-dark-toggler-border-color !important;
+    }
+    .navbar-toggler-icon {
+        background-image: $navbar-dark-toggler-icon-bg !important;
+    }
 }

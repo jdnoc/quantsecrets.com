@@ -44,3 +44,21 @@ if (navigator && navigator.clipboard) {
 
     document.body.appendChild(script);
 }
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    let el = document.getElementById("footer-image");
+    el.src = "/assets/images/logo-words.png";
+}
+
+window.matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', event => {
+        if (event.matches) {
+            //dark mode
+            let el = document.getElementById("footer-image");
+            el.src = "/assets/images/logo-words.png";
+        } else {
+            //light mode
+            let el = document.getElementById("footer-image");
+            el.src = "/assets/images/logo-words-black.png";
+        }
+    })
