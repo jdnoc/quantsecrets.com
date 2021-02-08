@@ -9,8 +9,8 @@ twitter:
   username: quantsecrets
   card: summary
 
-logo: /assets/images/header.png
-image: /assets/images/header.png
+logo: /assets/images/logo-words.png
+image: /assets/images/quant-secrets.png
 
 # Build settings
 markdown: kramdown
