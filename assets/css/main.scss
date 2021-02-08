@@ -4,7 +4,8 @@
 @import "bootstrap";
 
 pre {
-    margin: 20px;
+    padding: 20px;
+    background-color: $light;
 }
 
 .highlight .hll { background-color: #ffffcc }

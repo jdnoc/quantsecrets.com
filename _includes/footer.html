@@ -8,10 +8,12 @@
                     <small class="d-block mb-3 text-muted">© {{ 'now' | date: "%Y" }}</small>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Resources</h5>
+                    <h5>Knowledge Base</h5>
+                    {% for post in site.posts %}
                     <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary" href="#">Introduction to Quant Trading</a></li>
+                        <li><a class="link-secondary" href="{{ post.url }}">{{ post.title }}</a></li>
                     </ul>
+                    {% endfor %}
                 </div>
                 <div class="col-6 col-md">
                     <h5>Newsletter</h5>
