@@ -64,7 +64,7 @@ Before we actually interface with the Polygon API to get data, we have to get ou
 Things you'll need to install:
 
 - [Visual Studio Code](https://code.visualstudio.com/) – for editing your code.
-- [Node.js](https://nodejs.org/) – a JavaScript runtime engine for interfacing with the API.
+- [Node.js](https://nodejs.org/) – a JavaScript runtime engine for interfacing with the API. **Get the LTS version.** Not the latest version.
 
 I don't plan on including how to get those things set up and working, there should be enough documentation within the individual projects to make sure you have it all installed correctly.
 
