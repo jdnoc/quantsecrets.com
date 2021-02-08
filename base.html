@@ -5,20 +5,22 @@ description: Quant Secrets Knowledge Base
 ---
 
 {% for post in site.posts %}
-<div class="card my-3">
-    <div class="card-header pt-4 bg-dark text-center">
-        <h2 class="blog-post-title text-white"><a class="text-white" href="{{ post.url | absolute_url }}">{{ post.title
-                }}</a></h2>
-        <p class="font-weight-normal text-white lead"><em>{{ post.description }}</em></p>
-        <p class="blog-post-meta text-white">{{ post.date | date: '%B %d, %Y' }}</p>
-    </div>
-    <div class="card-body">
-        <div class="card-text">
-            {{ post.content | truncatewords: 75 }}
+<div class="card my-3 shadow">
+    <a style="text-decoration: none" href="{{ post.url | absolute_url }}">
+        <div class="card-header pt-4 bg-dark text-center">
+            <h2 class="blog-post-title text-white">{{ post.title
+                }}</h2>
+            <p class="font-weight-normal text-white lead"><em>{{ post.description }}</em></p>
+            <p class="blog-post-meta text-white">{{ post.date | date: '%B %d, %Y' }}</p>
         </div>
-        <a class="my-3 btn btn-outline-primary" href="{{ post.url | absolute_url }}">
-            Read More
-        </a>
-    </div>
+        <div class="card-body">
+            <div class="card-text text-dark">
+                {{ post.content | truncatewords: 75 }}
+            </div>
+            <a class="my-3 btn btn-outline-primary" href="{{ post.url | absolute_url }}">
+                Read More
+            </a>
+        </div>
+    </a>
 </div>
 {% endfor %}
