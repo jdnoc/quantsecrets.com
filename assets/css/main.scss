@@ -92,6 +92,9 @@ pre {
     .navbar-toggler-icon {
         background-image: $navbar-dark-toggler-icon-bg !important;
     }
+    a { 
+        color: lighten($primary, 20%);
+    }
 }
 
 .highlight pre { background-color: #404040 }
